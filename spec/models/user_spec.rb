@@ -44,7 +44,6 @@ describe User do
     before { @user.password_confirmation = "mismatch" }
     it { should_not be_valid }
   end
-  end
 
   describe "when password confirmation is nil" do
     before { @user.password_confirmation = nil }
